@@ -145,6 +145,7 @@ public:
                           0.0,
                           0.0;
       // d(deltaRobot) / d(K)
+      // K = [J11, J12, J21, J22, J31, J32]
       gtsam::Matrix66 H_deltaRobot_K;
       H_deltaRobot_K << H_deltaRobot_J11, H_deltaRobot_J12, H_deltaRobot_J21, H_deltaRobot_J22, H_deltaRobot_J31, H_deltaRobot_J32;
       // d(log error) / d(K)
