@@ -1,8 +1,8 @@
 # 学振PD審査員の方々へ
 本githubページでは、公開するオープンソースソフトウェアに加えて、申請書提出以降で確定した成果を期間限定で掲載します。
-## 申請者がメイン講師となるセミナー（申請書8ページの研究に関する自身の強みにおける「技量」での内容）
-株式会社テクノセンターが主催するセミナーのWEBページ
-https://www.j-techno.co.jp/seminar/seminar-63357/
+## 申請者がメイン講師となるセミナー
+- 株式会社テクノセンターが主催するセミナーのWEBページ (https://www.j-techno.co.jp/seminar/seminar-63357/)
+   - 申請書8ページの「(1) 研究に関する自身の強み」における「2. 技量」での内容
 
 <br><br><br>
 ------------  Please see the following contents for a user of this software.  ------------
