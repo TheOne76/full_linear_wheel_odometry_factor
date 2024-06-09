@@ -1,3 +1,11 @@
+# 学振PD審査員の方々へ
+本githubページでは、公開するオープンソースソフトウェアに加えて、申請書提出以降で確定した成果を期間限定で掲載します。
+## 申請者がメイン講師となるセミナー
+株式会社テクノセンターが主催するセミナーのWEBページ
+https://www.j-techno.co.jp/seminar/seminar-63357/
+
+<br><br><br>
+------------  Please see the following contents for a user of this software.  ------------
 # Introduction
 The full linear wheel odometry factor is a constraint depending on not only robot poses but also the kinematic parameters of a skid-steering robot.
 This factor can be used for two- and six-wheeled robots and tracked robots other than four-wheeled robots if these robots don't have steering mechanisms.
