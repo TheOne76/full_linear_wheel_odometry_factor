@@ -7,7 +7,7 @@
 #include <gtsam/nonlinear/Values.h>
 #include <gtsam/inference/Symbol.h>
 
-// **** Please include this header file to use the full linear wheel odometry factor. **** //
+// **** Please include this header file to use the full linear wheel odometry factor in your code. **** //
 #include "../full_linear_wheel_odometry_factor.hpp"
 
 using gtsam::symbol_shorthand::X;  // IMU pose
@@ -17,8 +17,8 @@ using gtsam::symbol_shorthand::K;  // kinematic parameters of skid-steering robo
 ///////////////////////  Overview  ////////////////////////
 ///////////////////////////////////////////////////////////
 // This example shows how to use the full linear wheel odometry factor.
-// This example has only straight motion, thus J11 and J21 are calibrated such that J11:1.05 -> 1, J12:1.05 -> 1.
-// This example is created by extending OdometryExample.cpp, GTSAM example.
+// This example has only straight motion, thus J11 and J12 are calibrated such that J11:1.05 -> 1, J12:1.05 -> 1.
+// This example was created by extending OdometryExample.cpp, GTSAM example.
 
 // Convert gtsam::Pose2 to gtsam::Pose3
 gtsam::Pose3 gtsamPose2ToPose3(const gtsam::Pose2 pose2)
