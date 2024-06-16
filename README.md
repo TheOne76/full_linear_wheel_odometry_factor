@@ -10,7 +10,8 @@
 # Introduction
 The full linear wheel odometry factor is a constraint depending on not only robot poses but also the kinematic parameters of a skid-steering robot.
 This factor can be used for two- and six-wheeled robots and tracked robots other than four-wheeled robots if these robots don't have steering mechanisms.
-The kinematic parameters are defined by the full linear model. 
+The kinematic parameters are defined by the full linear model (Please see the following image for understanding this model). 
+
 Therefore, this factor performs online calibration of kinematic models for skid-steering robots in addition to the motion constraint.
 **Owing to the online calibration, reliable wheel odometry-based constraint being adaptive to unknown environments (especially, slippage depending on the type of ground surface) is enabled without prior offline calibration manually**.
 
@@ -24,6 +25,11 @@ The main contribution of this factor is two-fold.
 
 The following video validates that LiDAR-IMU odometry with our full linear wheel odometry factor accomplishes accurate odometry estimation even in long corridors.
 [[video #1 with voice](https://youtu.be/PHIXTPku_Uo)], [[video #2 without voice](https://www.youtube.com/watch?v=woLl1c5IenE)]
+
+## Overview of the full linear model
+![image](https://github.com/TakuOkawara/full_linear_wheel_odometry_factor/assets/105478884/9650b8f9-43ab-45c4-97ef-bc6b2a14d1d0)
+
+
 # Prerequisited
 * [GTSAM](https://github.com/borglab/gtsam/tree/4.2a9)
 
