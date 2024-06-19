@@ -27,7 +27,7 @@ The following video validates that LiDAR-IMU odometry with our full linear wheel
 [[video #1 with voice](https://youtu.be/PHIXTPku_Uo)], [[video #2 without voice](https://www.youtube.com/watch?v=woLl1c5IenE)]
 
 ## Overview of the full linear model
-![image](https://github.com/TakuOkawara/full_linear_wheel_odometry_factor/assets/105478884/c074309b-9299-4175-8a73-6dd2ab4f9546)
+![image](https://github.com/TakuOkawara/full_linear_wheel_odometry_factor/assets/105478884/cbf1b1d0-355c-42bc-8c5e-e3651e53b0b4)
 
 
 # Prerequisited
