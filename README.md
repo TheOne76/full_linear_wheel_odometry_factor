@@ -9,7 +9,31 @@
 - 特別研究員及び受入研究者の**研究報告書（研究成果の報告に加え、提案手法のソースコードの公開や論文発表数など）** を基に、外部有識者により構成される特別研究員等審査会による審議で決定されました。
 
 <br><br><br>
+
+
+
+
 ------------  Please see the following contents for a user of this software.  ------------
+
+# Cite
+Please cite the following paper when you use this code for academic work.
+
+Note that the "journal={arXiv...}" part will be replaced with a proper one when this paper review is accepted.
+
+Link: https://arxiv.org/pdf/2404.02515
+
+---
+
+   @article{okawara2024tightly,
+     title={Tightly-Coupled LiDAR-IMU-Wheel Odometry with Online Calibration of a Kinematic Model for Skid-Steering Robots},
+     author={Okawara, Taku and Koide, Kenji and Oishi, Shuji and Yokozuka, Masashi and Banno, Atsuhiko and Uno, Kentaro and Yoshida, Kazuya},
+     journal={arXiv preprint arXiv:2404.02515},
+     year={2024}
+     }
+  
+---
+
+
 # Introduction
 The full linear wheel odometry factor is a constraint depending on not only robot poses but also the kinematic parameters of a skid-steering robot.
 This factor can be used for two- and six-wheeled robots and tracked robots other than four-wheeled robots if these robots don't have steering mechanisms.
