@@ -7,11 +7,11 @@
 ## 特別研究員－ＤＣの採用最終年次における研究奨励金特別手当の支給対象者に決定
 - 特別研究員－ＤＣの採用最終年次の在籍者のうち、**採用期間中に優れた研究成果を上げ**、さらなる進展が期待される者が支給対象です。
 - 特別研究員及び受入研究者の**研究報告書（研究成果の報告に加え、提案手法のソースコードの公開や論文発表数など）** を基に、外部有識者により構成される特別研究員等審査会による審議で決定されました。
-## 新しい論文の投稿
-Taku Okawara, Kenji Koide, and Shuji Oishi, et.al.: “Tightly-Coupled LiDAR-IMU-Wheel Odometry with an Online Neural Kinematic Model Learning via Factor Graph Optimization”, Robotics and Autonomous Systems, 2024.（ロボット分野のトップジャーナル、査読中、preprint準備中、）
+## 筆頭著者での新しい論文の投稿（査読中）
+**Taku Okawara**, Kenji Koide, and Shuji Oishi, et.al.: “Tightly-Coupled LiDAR-IMU-Wheel Odometry with an Online Neural Kinematic Model Learning via Factor Graph Optimization”, Robotics and Autonomous Systems, 2024.（ロボット分野のトップジャーナル、preprint準備中、）
 - 申請書における[成果8]を拡張し、機械学習を活用して従来の自己位置推定を凌駕する結果を取得
 - Google scholarでのh5指標でトップ14位のジャーナル [[link](https://scholar.google.co.jp/citations?view_op=top_venues&hl=ja&vq=eng_robotics)]
-- ![Google scholar RAS](https://github.com/TakuOkawara/full_linear_wheel_odometry_factor/assets/105478884/7ce3df39-271d-4ba8-b06b-19931c569603)
+- ![Google scholar RAS](https://github.com/TakuOkawara/full_linear_wheel_odometry_factor/assets/105478884/1a280403-92c9-4351-b5f3-85564434bf5d)
 <br><br><br>
 
 
