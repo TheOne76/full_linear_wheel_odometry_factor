@@ -7,7 +7,7 @@
 ## 特別研究員－ＤＣの採用最終年次における研究奨励金特別手当の支給対象者に決定
 - 特別研究員－ＤＣの採用最終年次の在籍者のうち、**採用期間中に優れた研究成果を上げ**、さらなる進展が期待される者が支給対象です。
 - 特別研究員及び受入研究者の**研究報告書（研究成果の報告に加え、提案手法のソースコードの公開や論文発表数など）** を基に、外部有識者により構成される特別研究員等審査会による審議で決定されました。
-## 筆頭著者での新しい論文の投稿（査読中）
+## 筆頭著者での新しい論文の投稿（7月9日投稿、査読中）
 **Taku Okawara**, Kenji Koide, and Shuji Oishi, et.al.: “Tightly-Coupled LiDAR-IMU-Wheel Odometry with an Online Neural Kinematic Model Learning via Factor Graph Optimization”, Robotics and Autonomous Systems, 2024
 - **[preprintで公開中](https://arxiv.org/submit/5726411/view)**
 - 線形モデル（申請書における[成果8]）を非線形モデル（ニューラルネットワーク）へと拡張し、従来の自己位置推定を凌駕する結果を取得
