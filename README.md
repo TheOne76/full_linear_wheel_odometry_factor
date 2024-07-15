@@ -1,6 +1,6 @@
 # 学振PD審査員の方々へ
 本githubページでは、公開するオープンソースソフトウェアに加えて、申請書提出以降で確定した成果を10月まで掲載します。
-## 申請者がメイン講師となるセミナー
+## 申請者がメイン講師となるセミナーのHP公開
 - 株式会社テクノセンターが主催するセミナーのWEBページ (https://www.j-techno.co.jp/seminar/seminar-63357/)
    -  ページを開くのに40秒ほどかかる場合があります。
    -  申請書8ページの「(1) 研究に関する自身の強み」における「2. 技量」で言及されている内容です。
@@ -9,7 +9,7 @@
 - 特別研究員及び受入研究者の**研究報告書（研究成果の報告に加え、提案手法のソースコードの公開や論文発表数など）** を基に、外部有識者により構成される特別研究員等審査会による審議で決定されました。
 ## 筆頭著者での新しい学術論文の投稿（7月9日投稿、査読中）
 **Taku Okawara**, Kenji Koide, and Shuji Oishi, Masashi Yokozuka, Atsuhiko Banno, Kentaro Uno and Kazuya Yoshida: “Tightly-Coupled LiDAR-IMU-Wheel Odometry with an Online Neural Kinematic Model Learning via Factor Graph Optimization”, Robotics and Autonomous Systems, 2024
-- **[preprintで公開中](https://drive.google.com/file/d/1_JK0vcv3zrz5MDR25WO1yYEQS61o-sfG/view?usp=drive_link)**
+- **[preprintで公開中](https://arxiv.org/abs/2407.08907)**
 - ロボットの運動学を線形モデル（申請書における[成果8]）から**非線形モデル（ニューラルネットワーク）へと拡張したモデルを推定システムに統合**することで、従来の自己位置推定を凌駕する結果を得ました。
 - **ロボット分野でのトップジャーナル**に投稿しました。
    - Google scholarでのh5指標でトップ14位のジャーナル [[link](https://scholar.google.co.jp/citations?view_op=top_venues&hl=ja&vq=eng_robotics)]
@@ -23,7 +23,6 @@
 
 # Cite
 Please cite the following paper when you use this code for academic work.
-
 Note that the "journal={arXiv...}" part will be replaced with a proper one when this paper review is accepted.
 
 Link: https://arxiv.org/pdf/2404.02515
