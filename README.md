@@ -56,7 +56,7 @@ The main contribution of this factor is two-fold.
     * This factor makes an odometry estimation (e.g., LiDAR-IMU odometry) more robust to environments where point clouds degenerate (e.g., long corridors and tunnels).
 
 The following video validates that LiDAR-IMU odometry with our full linear wheel odometry factor accomplishes accurate odometry estimation even in long corridors.
-[[video #1 with voice](https://youtu.be/PHIXTPku_Uo)], [[video #2 without voice](https://www.youtube.com/watch?v=woLl1c5IenE)]
+[[video](https://youtu.be/Vss86xUhU80)]
 
 ## Overview of the full linear model
 ![image](https://github.com/TakuOkawara/full_linear_wheel_odometry_factor/assets/105478884/8b0ccedf-ddc3-4b89-bcc0-0620664b69c8)
