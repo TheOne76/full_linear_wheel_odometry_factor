@@ -17,11 +17,11 @@ public:
   /**
    * @brief Constructor to define the full linear wheel odometry factor
    * @param kinematic_parameters_key  Key for kinematic paramters of skid-steering robots defined by the full linear model (Eq.10 in our paper)
-   * @param previous_pose_key             Key for prebious pose with respect to world frame
-   * @param current_pose_key             Key for current pose with respect to world frame
+   * @param previous_pose_key         Key for prebious pose with respect to world frame
+   * @param current_pose_key          Key for current pose with respect to world frame
    * @param right_delta_angle         Angular displacement of the right wheel as input [rad]
    * @param left_delta_angle          Delta angle of left encorders as input [rad]
-   * @param T_Robot_IMU               Transformation matrix from the robot frame to the IMU frame
+   * @param T_Robot_IMU               Transformation matrix from the robot frame to the IMU frame. This relative pose is needed because our LiDAR-IMU-Wheel Odometry estimates a IMU pose for simplicity. If IMU measurements are not utilized, please set an identity ( i.e., gtsam::Pose3() ) to T_Robot_IMU variable.
    * @param noise_model               Measurement noise model
    */
   FullLinearWheelOdometyFactor(
