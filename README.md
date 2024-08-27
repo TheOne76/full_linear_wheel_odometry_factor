@@ -16,7 +16,7 @@
 **Taku Okawara**, Kenji Koide, and Shuji Oishi, Masashi Yokozuka, Atsuhiko Banno, Kentaro Uno and Kazuya Yoshida: “Tightly-Coupled LiDAR-IMU-Wheel Odometry with an Online Neural Kinematic Model Learning via Factor Graph Optimization”, Robotics and Autonomous Systems, 2024
 - **[preprintで公開中](https://arxiv.org/abs/2407.08907)**
 - ロボットの運動学を線形モデル（申請書における[成果8]）から**非線形モデル（ニューラルネットワーク）へと拡張したモデルを推定システムに統合**することで、従来の自己位置推定を凌駕する結果を得ました。
-- **ロボット分野でのトップジャーナル**に投稿しました。
+- **ロボット分野でのトップジャーナル (IF: 4.3)** に投稿しました。
    - Google scholarでのh5指標でトップ14位のジャーナル [[link](https://scholar.google.co.jp/citations?view_op=top_venues&hl=ja&vq=eng_robotics)]
    - ![Google scholar RAS](https://github.com/TakuOkawara/full_linear_wheel_odometry_factor/assets/105478884/1a280403-92c9-4351-b5f3-85564434bf5d)
 <br><br><br>
