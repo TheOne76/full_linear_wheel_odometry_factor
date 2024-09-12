@@ -1,5 +1,9 @@
 # 学振PD審査員の方々へ
 本githubページでは、公開するオープンソースソフトウェアに加えて、申請書提出以降で確定した成果を10月まで掲載します。
+## 新たな主著論文の採択
+-  **主著論文が、IEEE Access (IF: 3.4)という国際ジャーナルに採択**されました（2024年9月12日）。
+   - 申請書の9ページにおいて、（参考：査読中の論文）として記述した成果です。
+   - IROSという国際会議には採択されませんでしたが、そのコメントを反映させて論文の質と量（8ページから12ページに変更）を大幅に向上させ、ジャーナルとして再投稿しました。
 ## 申請者がメイン講師となるセミナーの開催・講演終了
 - 株式会社テクノセンターが主催するセミナーのWEBページが公開されました。
    -  https://www.j-techno.co.jp/seminar/seminar-63357/
@@ -29,7 +33,7 @@
 
 # Cite
 Please cite the following paper when you use this code for academic work.
-Note that the "journal={arXiv...}" part will be replaced with a proper one when this paper review is accepted.
+This project was accepted by IEEE Access, the "journal={arXiv...}" part will be replaced with a proper one when this paper is published.
 
 Link: https://arxiv.org/pdf/2404.02515
 
