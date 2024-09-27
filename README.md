@@ -1,54 +1,3 @@
-# 学振PD審査員の方々へ
-本githubページでは、公開するオープンソースソフトウェアに加えて、申請書提出以降で確定した成果を10月まで掲載します。
-## 新たな主著論文の採択
--  **主著論文が、IEEE Access (IF: 3.4)という国際ジャーナル誌に採択**されました（2024年9月12日）。
-   - 申請書の9ページにおいて、（参考：査読中の論文）として記述した成果です。
-   - IROSという国際会議には採択されませんでしたが、そのコメントを反映させて論文の質と量（8ページから12ページに変更）を大幅に向上させ、ジャーナルとして再投稿しました。
-## 申請者がメイン講師となるセミナーの開催・講演終了
-- 株式会社テクノセンターが主催するセミナーのWEBページが公開されました。
-   -  https://www.j-techno.co.jp/seminar/seminar-63357/
-   -  ページを開くのに40秒ほどかかる場合があります。
-   -  申請書8ページの「(1) 研究に関する自身の強み」における「2. 技量」で言及されている内容です。
-   -  全6章で構成されるセミナーにおける1章（はじめの挨拶）と6章（まとめ）以外の**全ての章（＝資料の8割以上）を申請者が担当します**。
-   -  **アウトリーチ**として、[セミナー資料](https://github.com/TakuOkawara/pose_adjustment_demo/blob/main/%E8%B3%87%E6%96%99%20SLAM%EF%BC%88%E8%87%AA%E5%B7%B1%E4%BD%8D%E7%BD%AE%E6%8E%A8%E5%AE%9A%E3%83%BB%E5%9C%B0%E5%9B%B3%E6%A7%8B%E7%AF%89%EF%BC%89%E3%81%AE%E5%9F%BA%E7%A4%8E%E3%81%A8%E9%AB%98%E6%80%A7%E8%83%BD%E5%8C%96%E6%8A%80%E8%A1%93%E3%81%8A%E3%82%88%E3%81%B3%E5%AE%9F%E8%A3%85%E3%83%BB%E5%AE%9F%E5%BF%9C%E7%94%A8%E3%81%AE%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88.pdf)と[セミナーでのデモプログラム](https://github.com/TakuOkawara/pose_adjustment_demo)を公開しています。（日本テクノセンター様から許可をいただいています）
--  様々な会社から**計21人の受講者**が集まり、**大盛況なセミナー（8割の参加者の理解度が80％以上）** となりました。
-   -  自己位置推定について何も分からなかった頃に立ち返り、受講者が悩みそうな箇所を事前に予測しながらセミナーの資料作成をしたことが、成功の要因だったと考えます。
-   -  高評価なアンケート結果だったため、来年の夏にも再度セミナーを行ってもらいたいとの声を主催者側からいただきました。
-## 特別研究員－ＤＣの採用最終年次における研究奨励金特別手当の支給対象者に決定
-- 特別研究員－ＤＣの採用最終年次の在籍者のうち、**採用期間中に優れた研究成果を上げ**、さらなる進展が期待される者が支給対象です。
-- 特別研究員及び受入研究者の**研究報告書（研究成果の報告に加え、提案手法のソースコードの公開や論文発表数など）** を基に、外部有識者により構成される特別研究員等審査会による審議で決定されました。
-## 筆頭著者での新しい学術論文の投稿（7月9日投稿、査読中）
-**Taku Okawara**, Kenji Koide, and Shuji Oishi, Masashi Yokozuka, Atsuhiko Banno, Kentaro Uno and Kazuya Yoshida: “Tightly-Coupled LiDAR-IMU-Wheel Odometry with an Online Neural Kinematic Model Learning via Factor Graph Optimization”, Robotics and Autonomous Systems, 2024
-- **[preprintで公開中](https://arxiv.org/abs/2407.08907)**
-- ロボットの運動学を線形モデル（申請書における[成果8]）から**非線形モデル（ニューラルネットワーク）へと拡張したモデルを推定システムに統合**することで、従来の自己位置推定を凌駕する結果を得ました。
-- **ロボット分野でのトップジャーナル (IF: 4.3)** に投稿しました。
-   - Google scholarでのh5指標でトップ14位のジャーナル [[link](https://scholar.google.co.jp/citations?view_op=top_venues&hl=ja&vq=eng_robotics)]
-   - ![Google scholar RAS](https://github.com/TakuOkawara/full_linear_wheel_odometry_factor/assets/105478884/1a280403-92c9-4351-b5f3-85564434bf5d)
-<br><br><br>
-
-
-
-
-------------  Please see the following contents for a user of this software.  ------------
-
-# Cite
-Please cite the following paper when you use this code for academic work.
-This project was accepted by IEEE Access, the "journal={arXiv...}" part will be replaced with a proper one when this paper is published.
-
-Link: https://arxiv.org/pdf/2404.02515
-
----
-
-   @article{okawara2024tightly,
-     title={Tightly-Coupled LiDAR-IMU-Wheel Odometry with Online Calibration of a Kinematic Model for Skid-Steering Robots},
-     author={Okawara, Taku and Koide, Kenji and Oishi, Shuji and Yokozuka, Masashi and Banno, Atsuhiko and Uno, Kentaro and Yoshida, Kazuya},
-     journal={arXiv preprint arXiv:2404.02515},
-     year={2024}
-     }
-  
----
-
-
 # Introduction
 The full linear wheel odometry factor is a constraint depending on not only robot poses but also the kinematic parameters of a skid-steering robot.
 This factor can be used for two- and six-wheeled robots and tracked robots other than four-wheeled robots if these robots don't have steering mechanisms.
@@ -86,5 +35,21 @@ make
 ./full_linear_wheel_odometry_factor_example
 ```
 
+# Cite
+Please cite the following paper when you use this code for academic work.
+This project was accepted by IEEE Access, the "journal={arXiv...}" part will be replaced with a proper one when this paper is published.
+
+Link: https://arxiv.org/pdf/2404.02515
+
+---
+
+   @article{okawara2024tightly,
+     title={Tightly-Coupled LiDAR-IMU-Wheel Odometry with Online Calibration of a Kinematic Model for Skid-Steering Robots},
+     author={Okawara, Taku and Koide, Kenji and Oishi, Shuji and Yokozuka, Masashi and Banno, Atsuhiko and Uno, Kentaro and Yoshida, Kazuya},
+     journal={arXiv preprint arXiv:2404.02515},
+     year={2024}
+     }
+  
+---
 <!-- # Citation
 If you use the full linear wheel odometry factor for academic work, please cite the following publication.  -->
