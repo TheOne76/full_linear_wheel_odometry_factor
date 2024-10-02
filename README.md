@@ -37,16 +37,17 @@ make
 
 # Cite
 Please cite the following paper when you use this code for academic work.
-This project was accepted by IEEE Access, the "journal={arXiv...}" part will be replaced with a proper one when this paper is published.
 
-Link: https://arxiv.org/pdf/2404.02515
+URL: https://ieeexplore.ieee.org/document/10681089?source=authoralert
 
 ---
 
    @article{okawara2024tightly,
      title={Tightly-Coupled LiDAR-IMU-Wheel Odometry with Online Calibration of a Kinematic Model for Skid-Steering Robots},
      author={Okawara, Taku and Koide, Kenji and Oishi, Shuji and Yokozuka, Masashi and Banno, Atsuhiko and Uno, Kentaro and Yoshida, Kazuya},
-     journal={arXiv preprint arXiv:2404.02515},
+     journal={IEEE Access},
+     volume={12},
+     pages={134728--134738},
      year={2024}
      }
   
