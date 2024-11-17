@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
   initial_K << 0.5*wheel_radius, 0.5*wheel_radius, 0.0, 0.0, -wheel_radius/wheel_base, wheel_radius/wheel_base;
   graph.addPrior(K(1), initial_K);
 
-  // Simulate a displacement of wheels for straightt movement. Please use actual values of your data.
+  // Simulate a displacement of wheels for straight movement. Please use actual values of your data.
   double right_wheels_delta_angle_for_straight_movement = 1.0; // [rad]
   double left_wheel_delta_angle_for_straight_movement = 1.0; // [rad]
 
