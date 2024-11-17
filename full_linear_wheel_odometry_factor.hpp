@@ -4,6 +4,12 @@
 #include <gtsam/geometry/Pose3.h>
 #include <gtsam/nonlinear/NonlinearFactor.h>
 
+// Author: Taku Okawara
+// You can refer to the following paper to understand the equations used in this code.
+// Paper title: Tightly-Coupled LiDAR-IMU-Wheel Odometry With Online Calibration of a Kinematic Model for Skid-Steering Robots
+// URL: https://ieeexplore.ieee.org/document/10681089
+
+
 // *** NOTATION *** ///
 // pp:    Previous pose
 // cp:    Current pose
@@ -16,11 +22,11 @@ class FullLinearWheelOdometyFactor : public gtsam::NoiseModelFactor3<gtsam::Vect
 public:
   /**
    * @brief Constructor to define the full linear wheel odometry factor
-   * @param kinematic_parameters_key  Key for kinematic paramters of skid-steering robots defined by the full linear model (Eq.10 in our paper)
-   * @param previous_pose_key         Key for prebious pose with respect to world frame
+   * @param kinematic_parameters_key  Key for kinematic parameters of skid-steering robots defined by the full linear model (Eq.10 in our paper)
+   * @param previous_pose_key         Key for previous pose with respect to world frame
    * @param current_pose_key          Key for current pose with respect to world frame
    * @param right_delta_angle         Angular displacement of the right wheel as input [rad]
-   * @param left_delta_angle          Delta angle of left encorders as input [rad]
+   * @param left_delta_angle          Delta angle of left encoders as input [rad]
    * @param T_Robot_IMU               Transformation matrix from the robot frame to the IMU frame. This relative pose is needed because our LiDAR-IMU-Wheel Odometry estimates a IMU pose for simplicity. If IMU measurements are not utilized, please set an identity ( i.e., gtsam::Pose3() ) to T_Robot_IMU variable.
    * @param noise_model               Measurement noise model
    */
@@ -35,8 +41,8 @@ public:
 
   /**
    * @brief Evaluate error.
-   * @param kinematic_parameters  Kinematic paramters of skid-steering robots to be calibrated
-   * @param previous_pose         Prebious pose with respect to world frame
+   * @param kinematic_parameters  Kinematic parameters of skid-steering robots to be calibrated
+   * @param previous_pose         Previous pose with respect to world frame
    * @param current_pose          Current pose with respect to world frame
    * @param H1                    d(log error) / d(kinematic_parameters)
    * @param H2                    d(log error) / d(previous_pose)
@@ -48,7 +54,7 @@ public:
     const gtsam::Pose3& previous_pose, const gtsam::Pose3& current_pose, 
     boost::optional<gtsam::Matrix&> H1, boost::optional<gtsam::Matrix&> H2, boost::optional<gtsam::Matrix&> H3) const override {
 
-    // 1. Calculate a measurement function of the full linear wheel odometry with respect to the robot frame (measuremetn function)
+    // 1. Calculate a measurement function of the full linear wheel odometry with respect to the robot frame (measurement function)
     // 1.1 The robot displacement ∆o_ij ∈ se2 is extended into ∆O_ij ∈ se3.
     // 1.2 ∆O_ij ∈ se3 is converted into SE3.
     gtsam::Vector6 measurement_function_in_robot_frame;
@@ -57,10 +63,10 @@ public:
     gtsam::Pose3 T_Robot_DeltaRobot = gtsam::Pose3::Expmap(measurement_function_in_robot_frame);    
 
     // 2. Transform T_Robot_DeltaRobot (the robot displacement in the robot frame) into T_IMU_DeltaIMU (the IMU displacement in the IMU frame) 
-    // 2.1 Calculate T_IMU_DeltaIMU bsed on the following equation.
+    // 2.1 Calculate T_IMU_DeltaIMU based on the following equation.
       // T_IMU_DeltaIMU = T_IMU_Robot * T_Robot_DeltaRobot * T_Robot_IMU
 
-    // A is temporary variable name, this is eraced by the chain rule.
+    // A is a temporary variable name, this variable is erased by the chain rule.
     gtsam::Matrix H_A_DeltaRobot;
     gtsam::Pose3 T_Robot_DeltaRobot_T_Robot_IMU = T_Robot_DeltaRobot.compose(T_Robot_IMU_, H_A_DeltaRobot);
     
@@ -70,7 +76,7 @@ public:
 
 
     // 3. Calculate the error of the full linear wheel odometry factor (Eq.13 in our paper)
-    // 3.1 Calculate the delta pose between the previous pose and the current pose.
+    // 3.1 Calculate the delta pose between the previous and current poses.
 
     // d(T_pp_cp) / d(previous_pose)
     gtsam::Matrix66 H_dp_pp;
@@ -92,8 +98,8 @@ public:
     gtsam::Vector6 log_error = error.Logmap(error, H_loge_e);
 
 
-    // 4. Calculate the jacobian matrix for the optimization values
-    // 4.1 Calculate the jacobian matrix for the skid-steering robot's kinematic paramter vector
+    // 4. Calculate the Jacobian matrix for the optimization values
+    // 4.1 Calculate the Jacobian matrix for the skid-steering robot's kinematic parameter vector
 
     if(H1) {
       // d(T_Robot_DeltaRobot) / d(J11)
@@ -145,7 +151,7 @@ public:
                           0.0,
                           0.0;
       // d(deltaRobot) / d(K)
-      // K = [J11, J12, J21, J22, J31, J32]
+      // K = [J11, J12, J21, J22, J31, J32], namely a skid-steering robot's kinematic parameter vector of the full linear model
       gtsam::Matrix66 H_deltaRobot_K;
       H_deltaRobot_K << H_deltaRobot_J11, H_deltaRobot_J12, H_deltaRobot_J21, H_deltaRobot_J22, H_deltaRobot_J31, H_deltaRobot_J32;
       // d(log error) / d(K)
@@ -153,14 +159,14 @@ public:
 
     }
 
-    // 4.2 Calculate the jacobian matrix for the previous pose
+    // 4.2 Calculate the Jacobian matrix for the previous pose
     if(H2) {
       // d(log error) / d(previous_pose)
       *H2 = H_loge_e * H_e_dp * H_dp_pp;
 
     }
 
-    // 4.3 Calculate the jacobian matrix for the current pose
+    // 4.3 Calculate the Jacobian matrix for the current pose
     if(H3) {
       // d(log error) / d(current_pose)
       *H3 = H_loge_e * H_e_dp * H_dp_cp;
