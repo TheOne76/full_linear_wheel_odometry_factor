@@ -1,3 +1,6 @@
+Example incorporating the **full linear wheel odometry factor** into LiDAR-IMU odometry:
+![10sec](https://github.com/user-attachments/assets/0bbbf108-f7b0-4e0d-a052-b255646d4fb9)
+
 # Introduction
 The full linear wheel odometry factor is a constraint depending on not only robot poses but also the kinematic parameters of a skid-steering robot.
 This factor can be used for two- and six-wheeled robots and tracked robots other than four-wheeled robots if these robots don't have steering mechanisms.
