@@ -58,3 +58,17 @@ URL: https://ieeexplore.ieee.org/document/10681089?source=authoralert
 ---
 <!-- # Citation
 If you use the full linear wheel odometry factor for academic work, please cite the following publication.  -->
+
+# How to extend this work such as for high-speed robot operation
+This work can take into account unknown terrain-dependent phenomena (e.g., wheel slippage); however, **large wheel slippage (i.e., nonlinear terms for the kinematic model) is difficult to express accurately for the full linear model**.
+To consider this difficulty, we published the following paper:
+
+**Tightly-Coupled LiDAR-IMU-Wheel Odometry with an Online Neural Kinematic Model Learning via Factor Graph Optimization**  
+Taku Okawara, Kenji Koide, Shuji Oishi, Masashi Yokozuka, Atsuhiko Banno, Kentaro Uno, and Kazuya Yoshida  
+*Robotics and Autonomous Systems*, Jan., 2025 (in press)
+
+📹 [Short Video](./videos/RAS2024_short_ver.mp4)
+
+📺 [Full Video on YouTube](https://www.youtube.com/watch?v=CvRVhdda7Cw)
+
+![Examples of Nonlinear Motions](./images/RAS2024_ad.png)
