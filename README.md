@@ -67,8 +67,6 @@ To consider this difficulty, we published the following paper:
 Taku Okawara, Kenji Koide, Shuji Oishi, Masashi Yokozuka, Atsuhiko Banno, Kentaro Uno, and Kazuya Yoshida  
 *Robotics and Autonomous Systems*, Jan., 2025 (in press)
 
-📹 [Short Video](./videos/RAS2024_short_ver.mp4)
-
 📺 [Full Video on YouTube](https://www.youtube.com/watch?v=CvRVhdda7Cw)
 
-![Examples of Nonlinear Motions](./images/RAS2024_ad.png)
+<img src="./images/RAS2024_ad.png" alt="Examples of Nonlinear Motions" width="600">
