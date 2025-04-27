@@ -28,7 +28,7 @@ The following video validates that LiDAR-IMU odometry with our full linear wheel
 # Prerequisited
 * [GTSAM](https://github.com/borglab/gtsam/tree/4.2a9)
 
-We tested this code by Ubuntu 22.04
+We tested this code on Ubuntu 22.04
 
 # Usage
 **The full linear wheel odometry factor is implemented as a header-only file written in C++. Therefore, you can use this factor by only including this header file in your code.** Please refer to the [examples](https://github.com/TakuOkawara/full_linear_wheel_odometry_factor/tree/main/examples) directory for how to incorporate this factor into your factor graph defined by GTSAM. Specifically, the example file can be executed based on the following commands.
@@ -59,13 +59,13 @@ URL: https://ieeexplore.ieee.org/document/10681089?source=authoralert
 <!-- # Citation
 If you use the full linear wheel odometry factor for academic work, please cite the following publication.  -->
 
-# How to extend this work such as for high-speed robot operation
+# How to extend this work, such as for high-speed robot operation
 This work can take into account unknown terrain-dependent phenomena (e.g., wheel slippage); however, **large wheel slippage (i.e., nonlinear terms for the kinematic model) is difficult to express accurately for the full linear model**.
 To consider this difficulty, we published the following paper:
 
 **Tightly-Coupled LiDAR-IMU-Wheel Odometry with an Online Neural Kinematic Model Learning via Factor Graph Optimization**  
 Taku Okawara, Kenji Koide, Shuji Oishi, Masashi Yokozuka, Atsuhiko Banno, Kentaro Uno, and Kazuya Yoshida  
-*Robotics and Autonomous Systems*, Jan., 2025 (in press)
+*Robotics and Autonomous Systems*, Vol. 187, No. 104929, Jan., 2025 (DOI: [10.1016/j.robot.2025.104929](https://www.sciencedirect.com/science/article/pii/S0921889025000156?via%3Dihu))
 
 ![RAS2024_drifting_GIF_low](https://github.com/user-attachments/assets/0795e4eb-9ef9-41ad-8f5f-96f89442c27c)
 
