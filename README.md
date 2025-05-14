@@ -1,4 +1,10 @@
-Example: Incorporating the **full linear wheel odometry factor** into LiDAR-IMU odometry to deal with kinematic parameter errors and severely featureless environments.
+# Motivation
+![image](https://github.com/user-attachments/assets/583bbc7f-c9fa-4bf7-9fa0-d711692e24ff)
+
+
+
+## Use case of the proposed method
+Incorporating the **full linear wheel odometry factor** into LiDAR-IMU odometry to deal with kinematic parameter errors and severely featureless environments.
 ![10sec](https://github.com/user-attachments/assets/0bbbf108-f7b0-4e0d-a052-b255646d4fb9)
 
 
