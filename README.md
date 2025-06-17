@@ -79,4 +79,6 @@ Taku Okawara, Kenji Koide, Shuji Oishi, Masashi Yokozuka, Atsuhiko Banno, Kentar
 
 [![Watch the video](https://img.youtube.com/vi/CvRVhdda7Cw/0.jpg)](https://www.youtube.com/watch?v=CvRVhdda7Cw)
 
-<img src="./images/RAS2024_ad.png" alt="Examples of Nonlinear Motions" width="600">
+📺[**Legged robot ver's video**](https://www.youtube.com/watch?v=ZD5cR1u8Nc0)
+
+[![Watch the video](https://img.youtube.com/vi/ZD5cR1u8Nc0/0.jpg)](https://www.youtube.com/watch?v=ZD5cR1u8Nc0)
