@@ -50,18 +50,18 @@ Please cite the following paper when you use this code for academic work.
 
 URL: https://ieeexplore.ieee.org/document/10681089?source=authoralert
 
----
 
-   @article{okawara2024tightly,
-     title={Tightly-Coupled LiDAR-IMU-Wheel Odometry with Online Calibration of a Kinematic Model for Skid-Steering Robots},
-     author={Okawara, Taku and Koide, Kenji and Oishi, Shuji and Yokozuka, Masashi and Banno, Atsuhiko and Uno, Kentaro and Yoshida, Kazuya},
-     journal={IEEE Access},
-     volume={12},
-     pages={134728--134738},
-     year={2024}
-     }
-  
----
+```
+@article{okawara2024tightly,
+  title={Tightly-Coupled LiDAR-IMU-Wheel Odometry with Online Calibration of a Kinematic Model for Skid-Steering Robots},
+  author={Okawara, Taku and Koide, Kenji and Oishi, Shuji and Yokozuka, Masashi and Banno, Atsuhiko and Uno, Kentaro and Yoshida, Kazuya},
+  journal={IEEE Access},
+  volume={12},
+  pages={134728--134738},
+  year={2024}
+}
+```
+
 <!-- # Citation
 If you use the full linear wheel odometry factor for academic work, please cite the following publication.  -->
 
@@ -82,3 +82,16 @@ Taku Okawara, Kenji Koide, Shuji Oishi, Masashi Yokozuka, Atsuhiko Banno, Kentar
 📺[**Legged robot ver's video**](https://www.youtube.com/watch?v=ZD5cR1u8Nc0)
 
 [![Watch the video](https://img.youtube.com/vi/ZD5cR1u8Nc0/0.jpg)](https://www.youtube.com/watch?v=ZD5cR1u8Nc0)
+
+
+```
+@article{okawara2025ral,
+  title={Tightly-Coupled LiDAR-IMU-Leg Odometry with Online Learned Leg Kinematics Incorporating Foot Tactile Information},
+  author={Okawara, Taku and Koide, Kenji and Takanose, Aoki and Oishi, Shuji and Yokozuka, Masashi and Uno, Kentaro and Yoshida, Kazuya},
+  journal={IEEE Robotics and Automation Letters},
+  volume={10},
+  number={8},
+  year={2025},
+  publisher={IEEE}
+}
+```
