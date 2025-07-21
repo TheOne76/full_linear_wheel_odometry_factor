@@ -83,15 +83,5 @@ Taku Okawara, Kenji Koide, Shuji Oishi, Masashi Yokozuka, Atsuhiko Banno, Kentar
 
 [![Watch the video](https://img.youtube.com/vi/ZD5cR1u8Nc0/0.jpg)](https://www.youtube.com/watch?v=ZD5cR1u8Nc0)
 
+Tightly-Coupled LiDAR-IMU-Leg Odometry with Online Learned Leg Kinematics Incorporating Foot Tactile Information (RA-L) [[URL](https://arxiv.org/pdf/2506.09548)]
 
-```
-@article{okawara2025ral,
-  title={Tightly-Coupled LiDAR-IMU-Leg Odometry with Online Learned Leg Kinematics Incorporating Foot Tactile Information},
-  author={Okawara, Taku and Koide, Kenji and Takanose, Aoki and Oishi, Shuji and Yokozuka, Masashi and Uno, Kentaro and Yoshida, Kazuya},
-  journal={IEEE Robotics and Automation Letters},
-  volume={10},
-  number={8},
-  year={2025},
-  publisher={IEEE}
-}
-```
