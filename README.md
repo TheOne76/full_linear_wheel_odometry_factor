@@ -85,3 +85,10 @@ Taku Okawara, Kenji Koide, Shuji Oishi, Masashi Yokozuka, Atsuhiko Banno, Kentar
 
 Tightly-Coupled LiDAR-IMU-Leg Odometry with Online Learned Leg Kinematics Incorporating Foot Tactile Information (RA-L) [[URL](https://arxiv.org/pdf/2506.09548)]
 
+
+📺[**Odometry Foundation Model ver's video**](https://www.youtube.com/watch?v=UVXCN13b0IY)
+
+[![Watch the video](https://img.youtube.com/vi/UVXCN13b0IY/0.jpg)](https://www.youtube.com/watch?v=UVXCN13b0IY)
+
+KING: Embodiment-Aware Kinematic Graph Neural Network for Unified Motion Representation of Legged and Wheeled Robots (IROS) [[URL](https://arxiv.org/pdf/2608.01015)]
+
